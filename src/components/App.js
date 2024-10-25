@@ -65,7 +65,9 @@ function App() {
   const count = questions.length;
 
   useEffect(() => {
-    fetch("http://localhost:8000/questions")
+    fetch(
+      "https://raw.githubusercontent.com/AbdllhAlioglu/quiz-data/refs/heads/main/public/data/questions.json"
+    )
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }));
