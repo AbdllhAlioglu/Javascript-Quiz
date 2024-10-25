@@ -1,0 +1,169 @@
+{
+  "questions": [
+    {
+      "question": "Which keyword is used to declare a variable in JavaScript?",
+      "options": ["var", "let", "const", "All of the above"],
+      "correctOption": 3,
+      "points": 5
+    },
+    {
+      "question": "Which method converts a string to a number?",
+      "options": ["toString()", "parseInt()", "stringify()", "split()"],
+      "correctOption": 1,
+      "points": 5
+    },
+    {
+      "question": "What is the correct syntax for a JavaScript arrow function?",
+      "options": [
+        "function() => {}",
+        "() => {}",
+        "function => () {}",
+        "() {} =>"
+      ],
+      "correctOption": 1,
+      "points": 5
+    },
+    {
+      "question": "Which array method adds one or more elements to the end of an array?",
+      "options": ["shift()", "unshift()", "push()", "pop()"],
+      "correctOption": 2,
+      "points": 5
+    },
+    {
+      "question": "What does the '===' operator compare?",
+      "options": [
+        "Value only",
+        "Value and type",
+        "Type only",
+        "None of the above"
+      ],
+      "correctOption": 1,
+      "points": 5
+    },
+    {
+      "question": "Which of these is a correct way to declare a constant in JavaScript?",
+      "options": [
+        "let PI = 3.14;",
+        "var PI = 3.14;",
+        "const PI = 3.14;",
+        "PI = 3.14;"
+      ],
+      "correctOption": 2,
+      "points": 5
+    },
+    {
+      "question": "How do you write an 'if' statement in JavaScript?",
+      "options": ["if x > 5 then", "if (x > 5)", "if x > 5:", "if x > 5 {}"],
+      "correctOption": 1,
+      "points": 5
+    },
+    {
+      "question": "What does NaN stand for in JavaScript?",
+      "options": [
+        "Not a Number",
+        "No assigned Number",
+        "Null and None",
+        "None as Null"
+      ],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "Which statement about closures is true?",
+      "options": [
+        "They are only used in React.",
+        "They are only available in strict mode.",
+        "They allow a function to access variables outside its immediate scope.",
+        "They are available only in global scope."
+      ],
+      "correctOption": 2,
+      "points": 5
+    },
+    {
+      "question": "What is the output of 'console.log(typeof null)'?",
+      "options": ["object", "null", "undefined", "number"],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "What is the purpose of the 'use strict' directive?",
+      "options": [
+        "It enables the use of ES6 modules.",
+        "It makes JavaScript run in a strict mode to catch common errors.",
+        "It allows using undeclared variables.",
+        "It allows duplicate parameter names."
+      ],
+      "correctOption": 1,
+      "points": 5
+    },
+    {
+      "question": "Which method removes the last element from an array?",
+      "options": ["pop()", "push()", "shift()", "unshift()"],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "What will '2' + 2 output in JavaScript?",
+      "options": ["4", "22", "Error", "NaN"],
+      "correctOption": 1,
+      "points": 5
+    },
+    {
+      "question": "Which symbol is used for single-line comments in JavaScript?",
+      "options": ["/*", "//", "#", "<!--"],
+      "correctOption": 1,
+      "points": 5
+    },
+    {
+      "question": "Which of the following is a way to define a function in JavaScript?",
+      "options": [
+        "function myFunc() {}",
+        "const myFunc = function() {}",
+        "const myFunc = () => {}",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 5
+    },
+    {
+      "question": "Which of the following is not a primitive type in JavaScript?",
+      "options": ["Number", "String", "Object", "Symbol"],
+      "correctOption": 2,
+      "points": 5
+    },
+    {
+      "question": "What is the output of 'console.log(0.1 + 0.2 === 0.3)'?",
+      "options": ["true", "false", "Error", "undefined"],
+      "correctOption": 1,
+      "points": 5
+    },
+    {
+      "question": "What does JSON stand for?",
+      "options": [
+        "JavaScript Object Notation",
+        "Java Source Open Network",
+        "JavaScript Online Navigation",
+        "Java Simplified Object Naming"
+      ],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "Which JavaScript method can be used to convert an array to a string?",
+      "options": [
+        "join()",
+        "concat()",
+        "toString()",
+        "Both join() and toString()"
+      ],
+      "correctOption": 3,
+      "points": 5
+    },
+    {
+      "question": "What is the output of 'console.log(typeof NaN)'?",
+      "options": ["undefined", "object", "NaN", "number"],
+      "correctOption": 3,
+      "points": 5
+    }
+  ]
+}
