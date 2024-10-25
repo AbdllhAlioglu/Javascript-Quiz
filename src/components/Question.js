@@ -17,7 +17,6 @@ export default function Question({
         <p>{` Question ${index + 1} / ${questions.length}`}</p>
       </div>
 
-      <h4>{question.question}</h4>
       <Options question={question} answer={answer} dispatch={dispatch} />
     </div>
   );
