@@ -69,7 +69,9 @@ function App() {
       "https://raw.githubusercontent.com/AbdllhAlioglu/quiz-data/refs/heads/main/public/data/questions.json"
     )
       .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
+      .then((data) =>
+        dispatch({ type: "dataReceived", payload: data }, console.log(data))
+      )
       .catch((err) => dispatch({ type: "dataFailed" }));
   }, []);
 
