@@ -9,6 +9,7 @@ import FinishButton from "./FinishButton";
 import NextButton from "./NextButton";
 import FinishScreen from "./FinishScreen";
 import Timer from "./Timer";
+import Progress from "./Progress";
 
 const initialState = {
   questions: [],
@@ -62,13 +63,17 @@ function reducer(state, action) {
 function App() {
   const [{ questions, status, index, point, answer, timeRemaining }, dispatch] =
     useReducer(reducer, initialState);
-  const count = questions.length;
 
   useEffect(() => {
-    fetch("http://localhost:8000/questions")
+    fetch(
+      "https://raw.githubusercontent.com/AbdllhAlioglu/quiz-data/refs/heads/main/public/data/questions.json"
+    )
       .then((res) => res.json())
       .then((data) =>
-        dispatch({ type: "dataReceived", payload: data }, console.log(data))
+        dispatch(
+          { type: "dataReceived", payload: data.questions },
+          console.log(data)
+        )
       )
       .catch((err) => dispatch({ type: "dataFailed" }));
   }, []);
@@ -87,6 +92,12 @@ function App() {
     }
   }, [status, timeRemaining]);
 
+  const numQuestions = questions.length;
+  const maxPossiblePoints = questions.reduce(
+    (prev, cur) => prev + cur.points, // Bu kısım düzeltildi
+    0
+  );
+
   return (
     <div className="app">
       <Header />
@@ -94,7 +105,7 @@ function App() {
         {status === "loading" && <Loader />}
         {status === "error" && <Error />}
         {status === "ready" && (
-          <StartScreen count={count} dispatch={dispatch} />
+          <StartScreen count={numQuestions} dispatch={dispatch} />
         )}
         {status === "finished" && (
           <FinishScreen
@@ -106,6 +117,13 @@ function App() {
 
         {status === "active" && (
           <>
+            <Progress
+              index={index}
+              numQuestions={numQuestions}
+              point={point}
+              maxPossiblePoints={maxPossiblePoints}
+              answer={answer}
+            />
             <Question
               question={questions[index]}
               answer={answer}

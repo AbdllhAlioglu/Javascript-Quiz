@@ -158,12 +158,6 @@
       ],
       "correctOption": 3,
       "points": 5
-    },
-    {
-      "question": "What is the output of 'console.log(typeof NaN)'?",
-      "options": ["undefined", "object", "NaN", "number"],
-      "correctOption": 3,
-      "points": 5
     }
   ]
 }
