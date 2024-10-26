@@ -12,7 +12,7 @@ import Timer from "./Timer";
 
 const initialState = {
   questions: [],
-  status: "loading", // loading , ready , active , error , finished
+  status: "loading", // loading , ready , active , error , finished //
   index: 0,
   point: 0,
   answer: null,
